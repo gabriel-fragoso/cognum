@@ -30,9 +30,13 @@
   </li>
   <br/>
     {
+      <br/>
       "name": "john doe",
+      <br/>
       "role": "admin"
+      <br/>
     }
+    <br/>
   <li>
     get - http://localhost:3000/v1/employee - para buscar todos os funcionarios:
   </li>
