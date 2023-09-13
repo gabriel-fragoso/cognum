@@ -5,6 +5,7 @@ import { CreateEmployeeController } from './controllers/Employee/CreateEmployeeC
 import { GetEmployeeController } from './controllers/Employee/GetEmployeeController'
 import { UpdateEmployeeController } from './controllers/Employee/UpdateEmployeeController'
 import { DeleteEmployeeController } from './controllers/Employee/DeleteEmployeeController'
+import { PopulateEmployeeController } from './controllers/Employee/PopulateEmployeeController'
 
 const router = Router()
 
@@ -25,5 +26,7 @@ router.put('/employee/:id', new UpdateEmployeeController().handle)
 router.delete('/employee/:id', new DeleteEmployeeController().handle)
 
 // Desafio 03
+
+router.get('/populate', new PopulateEmployeeController().handle);
 
 export { router }
